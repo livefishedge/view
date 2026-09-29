@@ -81989,6 +81989,486 @@
         2529,
         1790703498736968307
       ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026262_20260919_22_g19.json": {
+      "sig": [
+        941160,
+        1789862751014272180
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026262_20260919_23_g19.json": {
+      "sig": [
+        930972,
+        1789870659387115422
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_00_g19.json": {
+      "sig": [
+        918384,
+        1789870660437105129
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_01_g19.json": {
+      "sig": [
+        952049,
+        1789874568067905376
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_03_g19.json": {
+      "sig": [
+        941908,
+        1789881345734897699
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_05_g19.json": {
+      "sig": [
+        963333,
+        1789888813874359087
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_07_g19.json": {
+      "sig": [
+        916282,
+        1789895770937776507
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_09_g19.json": {
+      "sig": [
+        845236,
+        1789903262287152600
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_10_g19.json": {
+      "sig": [
+        821483,
+        1789909920629908457
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_11_g19.json": {
+      "sig": [
+        811992,
+        1789913768392957634
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_14_g19.json": {
+      "sig": [
+        806215,
+        1789921248627185726
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_16_g19.json": {
+      "sig": [
+        752964,
+        1789928323617503617
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_18_g19.json": {
+      "sig": [
+        724718,
+        1789935394499886569
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_19_g19.json": {
+      "sig": [
+        800474,
+        1789939547039291857
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_21_g19.json": {
+      "sig": [
+        834668,
+        1789946371109237584
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026263_20260920_23_g19.json": {
+      "sig": [
+        862668,
+        1789953367010964106
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_00_g19.json": {
+      "sig": [
+        859587,
+        1789957013629976703
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_02_g19.json": {
+      "sig": [
+        865664,
+        1789963632177331059
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_03_g19.json": {
+      "sig": [
+        888016,
+        1789967757322644229
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_05_g19.json": {
+      "sig": [
+        1076036,
+        1789975192198534739
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_06_g19.json": {
+      "sig": [
+        1072979,
+        1789981922437983175
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_08_g19.json": {
+      "sig": [
+        916470,
+        1789985764586070009
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_10_g19.json": {
+      "sig": [
+        786718,
+        1789993170675257868
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_12_g19.json": {
+      "sig": [
+        719449,
+        1790000186200213246
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_13_g19.json": {
+      "sig": [
+        662099,
+        1790007357987287443
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_15_g19.json": {
+      "sig": [
+        571183,
+        1790011185970647711
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_22_g19.json": {
+      "sig": [
+        557384,
+        1790036282191229836
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026264_20260921_23_g19.json": {
+      "sig": [
+        558642,
+        1790043398950394001
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_00_g19.json": {
+      "sig": [
+        614069,
+        1790043399813297642
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_01_g19.json": {
+      "sig": [
+        638166,
+        1790050034752954790
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_03_g19.json": {
+      "sig": [
+        560773,
+        1790054219540257160
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_05_g19.json": {
+      "sig": [
+        546252,
+        1790061613808268199
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_06_g19.json": {
+      "sig": [
+        545123,
+        1790068335823115441
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_07_g19.json": {
+      "sig": [
+        525546,
+        1790072190958389495
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_21_g19.json": {
+      "sig": [
+        550527,
+        1790119073712119456
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026265_20260922_23_g19.json": {
+      "sig": [
+        594619,
+        1790126494811009295
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026266_20260923_01_g19.json": {
+      "sig": [
+        608038,
+        1790133539864473290
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026266_20260923_02_g19.json": {
+      "sig": [
+        595201,
+        1790140634853486973
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026271_20260928_23_g19.json": {
+      "sig": [
+        1365168,
+        1790703507703675323
+      ]
+    },
+    "prod/usec_south/sst/images/json/sst_usec_south_2026272_20260929_15_g19.json": {
+      "sig": [
+        991591,
+        1790703508941662310
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026262_20260919_22_g19.json": {
+      "sig": [
+        24869,
+        1789862774608197026
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026262_20260919_23_g19.json": {
+      "sig": [
+        19586,
+        1789870663831071878
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_00_g19.json": {
+      "sig": [
+        24917,
+        1789870664243067843
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_01_g19.json": {
+      "sig": [
+        28359,
+        1789874570745880262
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_03_g19.json": {
+      "sig": [
+        31726,
+        1789881348597868597
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_05_g19.json": {
+      "sig": [
+        23353,
+        1789888817495266047
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_07_g19.json": {
+      "sig": [
+        20497,
+        1789895774262587800
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_09_g19.json": {
+      "sig": [
+        16017,
+        1789903266118095472
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_10_g19.json": {
+      "sig": [
+        16533,
+        1789909923610902240
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_11_g19.json": {
+      "sig": [
+        12601,
+        1789913772405934619
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_14_g19.json": {
+      "sig": [
+        10133,
+        1789921252382142615
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_16_g19.json": {
+      "sig": [
+        7520,
+        1789928327875496093
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_18_g19.json": {
+      "sig": [
+        7288,
+        1789935398419767097
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_19_g19.json": {
+      "sig": [
+        12644,
+        1789939550932245874
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_21_g19.json": {
+      "sig": [
+        12011,
+        1789946376436351348
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026263_20260920_23_g19.json": {
+      "sig": [
+        19122,
+        1789953372506864205
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_00_g19.json": {
+      "sig": [
+        15392,
+        1789957015584923120
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_02_g19.json": {
+      "sig": [
+        17677,
+        1789963633893280498
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_03_g19.json": {
+      "sig": [
+        21641,
+        1789967759852608408
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_05_g19.json": {
+      "sig": [
+        27357,
+        1789975195895591114
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_06_g19.json": {
+      "sig": [
+        27452,
+        1789981926087933681
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_08_g19.json": {
+      "sig": [
+        18866,
+        1789985768231041426
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_10_g19.json": {
+      "sig": [
+        11209,
+        1789993173941338418
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_12_g19.json": {
+      "sig": [
+        9590,
+        1790000189317164076
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_13_g19.json": {
+      "sig": [
+        7018,
+        1790007361104221310
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_15_g19.json": {
+      "sig": [
+        5363,
+        1790011189296619264
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_22_g19.json": {
+      "sig": [
+        2308,
+        1790036286197493379
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026264_20260921_23_g19.json": {
+      "sig": [
+        1011,
+        1790043403218171056
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_00_g19.json": {
+      "sig": [
+        3783,
+        1790043403340904966
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_01_g19.json": {
+      "sig": [
+        6399,
+        1790050036000949815
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_03_g19.json": {
+      "sig": [
+        4881,
+        1790054220828244154
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_05_g19.json": {
+      "sig": [
+        2558,
+        1790061615170758716
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_06_g19.json": {
+      "sig": [
+        2957,
+        1790068337391840914
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_07_g19.json": {
+      "sig": [
+        1011,
+        1790072192596468033
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_21_g19.json": {
+      "sig": [
+        2651,
+        1790119075351075594
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026265_20260922_23_g19.json": {
+      "sig": [
+        1011,
+        1790126496767387935
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026266_20260923_01_g19.json": {
+      "sig": [
+        3465,
+        1790133540877478021
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026266_20260923_02_g19.json": {
+      "sig": [
+        3708,
+        1790140636009904257
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026271_20260928_23_g19.json": {
+      "sig": [
+        39503,
+        1790703513745611795
+      ]
+    },
+    "prod/usec_south/sst_front/images/json/sstfront_usec_south_2026272_20260929_15_g19.json": {
+      "sig": [
+        24442,
+        1790703514620602591
+      ]
     }
   }
 }
