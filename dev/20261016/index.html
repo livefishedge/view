@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <base href="/">
+  <script>window.__FISHEDGE_DATA_PREVIEW = location.pathname.startsWith("/dev/20261016/");</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <title>Captain's Dashboard</title>
@@ -1051,7 +1052,7 @@ body.combined-mode #combined-menu-btn{
     var _posthog_methods = ['init','capture','identify','alias','groupIdentify','page','ready','reset','getFeatureFlag','onFeatureFlags','getLibraryInfo','getAnonymousId','setPersonProperties','setGroupProperties','setOncePersonProperties','setOnceGroupProperties','unsetGroupProperties'];
     _posthog_methods.forEach(function(m) { window.posthog[m] = function() { window.posthog._q.push([m].concat(Array.prototype.slice.call(arguments))); }; });
 
-    posthog.init('phc_vSJhhcgYknWa27Vydc2D3N8LxxPuTwJeKxYZXbLThwcF', {
+    if (!window.__FISHEDGE_DATA_PREVIEW) posthog.init('phc_vSJhhcgYknWa27Vydc2D3N8LxxPuTwJeKxYZXbLThwcF', {
       api_host: 'https://app.posthog.com',
       person_profiles: 'always',
       capture_pageview: true,
@@ -1091,6 +1092,12 @@ body.combined-mode #combined-menu-btn{
     });
 
     (async function initAuth() {
+      // The dated public data preview is read-only and must not consult production auth/profile APIs.
+      if (window.__FISHEDGE_DATA_PREVIEW) {
+        setAccountLinkVisible(false);
+        window.__profileReadyResolve?.(null);
+        return;
+      }
       // Auth: check session first (handles page refresh with existing session),
       // then listen for changes (handles magic link redirect with new session).
       const { data: { session } } = await sb.auth.getSession();
@@ -4725,7 +4732,7 @@ function makeMobileLandCanvas(bathy) {
 }
 
 async function ensureDesktopLandLayer(map) {
-  if (!map) return;
+  if (!map || window.__FISHEDGE_DATA_PREVIEW) return;
   // Region-switch safety: if the cached landLayer was built for a different
   // bbox or bathy URL, tear it down so it gets rebuilt against the new region.
   const curBBox = BBOX.join(",");
@@ -4919,7 +4926,7 @@ function extractContourSegments(bd, level, sx, sy, extent) {
 }
 
 async function ensureMobileLandLayer(map) {
-  if (!map) return;
+  if (!map || window.__FISHEDGE_DATA_PREVIEW) return;
   // Region-switch safety: rebuild land canvas when BBOX or bathy URL changed
   // (Friday's gridCache.__bathy_json fix cleared the contour data cache but left
   // the OL ImageStatic land layer pinned to the previous region's beige canvas).
@@ -5638,10 +5645,12 @@ async function renderCombinedMode() {
   }
 
   // ── Layer: Bathymetry contours ───────────────────────────────────────
-  const bathyData = await loadBathymetryJson(BATHY_JSON_URL);
-  const bathyGridInfo = { xAxis: bathyData.xAxis, yAxis: bathyData.yAxis, nx: bathyData.xAxis.length, ny: bathyData.yAxis.length };
-  const bathyLayer = buildBathyContourLayer(bathyData, bathyGridInfo, map);
-  if (bathyLayer) { map.addLayer(bathyLayer); window._combinedBathyLayer = bathyLayer; }
+  if (!window.__FISHEDGE_DATA_PREVIEW) {
+    const bathyData = await loadBathymetryJson(BATHY_JSON_URL);
+    const bathyGridInfo = { xAxis: bathyData.xAxis, yAxis: bathyData.yAxis, nx: bathyData.xAxis.length, ny: bathyData.yAxis.length };
+    const bathyLayer = buildBathyContourLayer(bathyData, bathyGridInfo, map);
+    if (bathyLayer) { map.addLayer(bathyLayer); window._combinedBathyLayer = bathyLayer; }
+  }
 
   // ── Layer: UV arrows ─────────────────────────────────────────────────
   // v4.2: use the dedicated rebuild helper so the layer picks the
@@ -8897,6 +8906,7 @@ function setPlaySpeed(mult) {
 }
 
 
+const modebarHost = document.getElementById("modebar-host");
 const modebarTip = document.getElementById("modebar-tip");
 
 const MODEBAR_HELP = {
@@ -8911,6 +8921,7 @@ const MODEBAR_HELP = {
 };
 
 function showModebarTip(btn, text){
+  if (!modebarHost || !modebarTip) return;
   // Ensure tooltip is inside the host (safe even if already there)
   if (modebarTip.parentElement !== modebarHost) modebarHost.appendChild(modebarTip);
 
@@ -8930,11 +8941,11 @@ function showModebarTip(btn, text){
 
 
 function hideModebarTip(){
-  modebarTip.style.display = "none";
+  if (modebarTip) modebarTip.style.display = "none";
 }
 
 function installModebarHoverHelpOnce(){
-  if (modebarHost.__hoverHelpInstalled) return;
+  if (!modebarHost || !modebarTip || modebarHost.__hoverHelpInstalled) return;
   modebarHost.__hoverHelpInstalled = true;
 
   modebarHost.addEventListener("mouseover", (e) => {
@@ -9160,6 +9171,7 @@ async function fetchFrameData(varKey, frameMeta) {
 }
 
 async function prepareLandMask() {
+  if (window.__FISHEDGE_DATA_PREVIEW) return;
   try {
     // Reuse your existing loader
     const data = await loadBathymetryJson(BATHY_JSON_URL);
@@ -9357,7 +9369,7 @@ async function showFrame() {
   if (hCbar) await renderFooterColorbarToDiv(hCbar, currentVar);
 
   const modebar = plotDiv.querySelector('.modebar');
-  if (modebar && !modebarHost.querySelector('.modebar')) {
+  if (modebar && modebarHost && !modebarHost.querySelector('.modebar')) {
       modebarHost.appendChild(modebar);
   }
 
@@ -9616,9 +9628,11 @@ async function loadCaptainBriefing() {
     const initialT = requestedTimeFromParams();
     const initialFrames = framesByVar[currentVar] || [];
     const initialTimes = frameTimesByVar[currentVar] || [];
+    const latestIdx = initialTimes.reduce((best, t, i) =>
+      Number.isFinite(t) && (best < 0 || t > initialTimes[best]) ? i : best, -1);
     currentFrameIdx = initialFrames.length && initialT !== null
       ? closestDaytimeIndex(currentVar, initialTimes, initialFrames, initialT)
-      : 0;
+      : (latestIdx >= 0 ? latestIdx : Math.max(0, initialFrames.length - 1));
     syncRangeInputsToVar();
     updateSliderUI();
     syncTimeControls();
